@@ -229,7 +229,7 @@ ar:{brand:'DAW by Dalilin',tag:'اعرض منتجات محلك بسهولة',tag
  signin:'تسجيل الدخول',signup:'إنشاء حساب',name:'الاسم',phone:'رقم الهاتف',cr:'رقم السجل التجاري',company:'اسم الشركة / المحل',email:'البريد الإلكتروني',pass:'كلمة المرور',
  otpt:'أدخل رمز التحقق',otpmsg:'أرسلنا رمزاً من 4 أرقام إلى بريدك الإلكتروني',verify:'تأكيد',back:'رجوع',resend:'إعادة إرسال الرمز',resendIn:'إعادة الإرسال بعد',
  welcome:'مرحباً',shopsub:'اضغط لإضافة منتجاتك وإكمالها',homemsg:'ابدأ بإضافة منتجات محلك',addprods:'إضافة المنتجات ←',addmore:'+ إضافة منتج آخر',
- save:'حفظ',a0:'غير محفوظ بعد…',a1:'جارٍ الحفظ…',a2:'تم الحفظ تلقائياً ✓',a3:'تعذر الحفظ التلقائي',homeb:'الرئيسية',logout:'خروج',lgt:'تسجيل الخروج',lgm:'سيتم تسجيل خروجك من حسابك. تأكد من حفظ منتجاتك قبل الخروج.',lgy:'نعم، تسجيل الخروج',lgn:'إلغاء',data:'البيانات',cont:'إكمال إضافة المنتجات',send:'إرسال',close:'إغلاق',saved:'تم الحفظ بنجاح ✅',soon:'سيتم تفعيل الإرسال لاحقاً',sent:'تم إرسال رمز جديد',
+ save:'حفظ',a0:'غير محفوظ بعد…',a1:'جارٍ الحفظ…',a2:'تم الحفظ تلقائياً ✓',a3:'تعذر الحفظ التلقائي',homeb:'الرئيسية',logout:'خروج',lgt:'تسجيل الخروج',lgm:'سيتم تسجيل خروجك من حسابك. تأكد من حفظ منتجاتك قبل الخروج.',lgy:'نعم، تسجيل الخروج',lgn:'إلغاء',data:'البيانات',cont:'إكمال إضافة المنتجات',send:'إرسال',close:'إغلاق',saved:'تم الحفظ بنجاح ✅',sentp:'تم إرسال منتجاتك بنجاح ✅',soon:'سيتم تفعيل الإرسال لاحقاً',sent:'تم إرسال رمز جديد',
  product:'منتج',remove:'حذف',nameAr:'اسم المنتج (عربي) *',nameEn:'اسم المنتج (إنجليزي) *',descAr:'الوصف (عربي) *',descEn:'الوصف (إنجليزي) *',price:'السعر *',type:'نوع المنتج *',
  category:'التصنيف',days:'أيام التحضير',hours:'ساعات التحضير',mins:'دقائق التحضير',qty:'الكمية',maxQty:'أقصى كمية للطلب',attrs:'الخصائص',size:'الحجم',offer:'عليه عرض',stock:'متوفر',
  images:'الصور (حتى صورتين)',addimg:'+ صورة',needf:'يرجى تعبئة الحقول الأساسية (*) لكل منتج',products:'منتج',
@@ -238,7 +238,7 @@ en:{brand:'DAW by Dalilin',tag:'Showcase your shop products with ease',tagsub:'C
  signin:'Sign in',signup:'Sign up',name:'Full name',phone:'Phone number',cr:'Commercial registration no.',company:'Company / shop name',email:'Email',pass:'Password',
  otpt:'Enter verification code',otpmsg:'We sent a 4-digit code to your email',verify:'Verify',back:'Back',resend:'Resend code',resendIn:'Resend in',
  welcome:'Welcome',shopsub:'Tap to add and complete your products',homemsg:'Start by adding your shop products',addprods:'Add products →',addmore:'+ Add another product',
- save:'Save',a0:'Not saved yet…',a1:'Saving…',a2:'Auto-saved ✓',a3:'Auto-save failed',homeb:'Home',logout:'Log out',lgt:'Log out',lgm:'You are about to log out of your account. Make sure your products are saved first.',lgy:'Yes, log out',lgn:'Cancel',data:'Data',cont:'Continue adding products',send:'Send',close:'Close',saved:'Saved successfully ✅',soon:'Sending will be enabled later',sent:'A new code was sent',
+ save:'Save',a0:'Not saved yet…',a1:'Saving…',a2:'Auto-saved ✓',a3:'Auto-save failed',homeb:'Home',logout:'Log out',lgt:'Log out',lgm:'You are about to log out of your account. Make sure your products are saved first.',lgy:'Yes, log out',lgn:'Cancel',data:'Data',cont:'Continue adding products',send:'Send',close:'Close',saved:'Saved successfully ✅',sentp:'Your products were sent successfully ✅',soon:'Sending will be enabled later',sent:'A new code was sent',
  product:'Product',remove:'Remove',nameAr:'Product name (Arabic) *',nameEn:'Product name (English) *',descAr:'Description (Arabic) *',descEn:'Description (English) *',price:'Price *',type:'Product type *',
  category:'Category',days:'Preparing days',hours:'Preparing hours',mins:'Preparing minutes',qty:'Quantity',maxQty:'Max order quantity',attrs:'Attributes',size:'Size',offer:'Has offer',stock:'In stock',
  images:'Images (max 2)',addimg:'+ Image',needf:'Please fill the required (*) fields of every product',products:'products',
@@ -392,7 +392,7 @@ $('saveBtn').onclick = async () => {
 };
 $('closeM').onclick = () => { $('modal').classList.add('hide'); $('homeBtn').click(); };
 $('contBtn').onclick = () => { $('modal').classList.add('hide'); $('addP').click(); };
-$('sendBtn').onclick = () => { $('modal').classList.add('hide'); toast(t('soon')); }; // TODO: send action
+$('sendBtn').onclick = () => { $('modal').classList.add('hide'); $('homeBtn').click(); toast(t('sentp')); };
 
 try { const s = JSON.parse(sessionStorage.s || 'null'); if (s) { token = s.token; user = s.user; enterHome(); } } catch(e){}
 setMode('in');
