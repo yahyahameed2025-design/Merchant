@@ -243,7 +243,7 @@ en:{brand:'DAW by Dalilin',tag:'Showcase your shop products with ease',tagsub:'C
  category:'Category',days:'Preparing days',hours:'Preparing hours',mins:'Preparing minutes',qty:'Quantity',maxQty:'Max order quantity',attrs:'Attributes',size:'Size',offer:'Has offer',stock:'In stock',
  images:'Images (max 2)',addimg:'+ Image',needf:'Please fill the required (*) fields of every product',products:'products',
  missing:'Please fill all fields',weakpass:'Password must be at least 6 characters',exists:'Account already exists',badlogin:'Wrong email or password',badotp:'Wrong code',toomany:'Too many attempts, try later',session:'Session expired, sign in again',net:'Cannot reach the server'}};
-let lang = localStorage.lang || 'ar', mode = 'in', last = null, token = '', user = {}, P = [], timer = 0;
+let lang = (()=>{ try { return localStorage.lang; } catch(e){ return ''; } })() || 'ar', mode = 'in', last = null, token = '', user = {}, P = [], timer = 0;
 const $ = id => document.getElementById(id), t = k => T[lang][k] || k;
 const show = id => { if (id === 'home' && typeof updHome === 'function') updHome(); $('homeBtn').classList.toggle('hide', id !== 'prods'); $('auto').classList.toggle('hide', id !== 'prods'); $('langBtn').classList.toggle('hide', id === 'prods'); $('logoutBtn').classList.toggle('hide', id !== 'home'); ['auth','otp','home','prods'].forEach(s => { const e = $(s); e.classList.toggle('hide', s !== id); if (s === id) { e.style.animation = 'none'; e.offsetHeight; e.style.animation = ''; } }); };
 const toast = m => { $('toast').innerHTML = '<span>' + m + '</span>'; setTimeout(() => $('toast').innerHTML = '', 2800); };
@@ -265,4 +265,4 @@ function setMode(m){ mode = m; $('tIn').classList.toggle('on', m === 'in'); $('t
 $('tIn').onclick = () => setMode('in'); $('tUp').onclick = () => setMode('up');
 
 async function api(action, data){
-  try { const r = await fetch(['save','list','delete'].includes(action) ? PRODUCTS_API : U
+  try { const r = await fetch(['save','
