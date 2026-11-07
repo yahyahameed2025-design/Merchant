@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self' data: blob: https://drive.google.com https://*.googleusercontent.com; connect-src https://script.google.com https://script.googleusercontent.com; base-uri 'none'; form-action 'none'">
 <title>DAW by Dalilin</title>
 <link rel="icon" href="data:image/png;base64,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">
 <style>
@@ -46,8 +48,8 @@ input:focus,textarea:focus{border-color:var(--pri);box-shadow:0 0 0 4px #5b4bff2
 .g{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}@media(max-width:560px){.g{grid-template-columns:1fr}}
 .g3{display:grid;grid-template-columns:repeat(3,1fr);gap:0 14px}@media(max-width:560px){.g3{grid-template-columns:1fr}}
 .err{color:var(--err);font-size:13.5px;min-height:22px;margin:8px 0}
-.ob{display:flex;gap:12px;justify-content:center;direction:ltr;margin:20px 0}
-.ob input{width:60px;height:68px;text-align:center;font-size:28px;font-weight:bold;padding:0}
+.ob{display:flex;gap:8px;justify-content:center;direction:ltr;margin:20px 0}
+.ob input{width:46px;height:60px;text-align:center;font-size:24px;font-weight:bold;padding:0}
 .center{text-align:center}.mut{color:var(--mut)}
 .lnk{border:0;background:none;color:var(--pri);box-shadow:none!important;padding:4px}
 .hi{font-size:54px;animation:up .6s both}
@@ -199,7 +201,7 @@ html.intro .logo:not(.ilogo){visibility:hidden}
 
   <section id="otp" class="card sec hide center" style="max-width:460px;margin-inline:auto">
     <div class="hi">📩</div><h2 data-i="otpt"></h2><p class="mut" data-i="otpmsg"></p>
-    <div class="ob"><input maxlength="1" inputmode="numeric"><input maxlength="1" inputmode="numeric"><input maxlength="1" inputmode="numeric"><input maxlength="1" inputmode="numeric"></div>
+    <div class="ob"><input maxlength="1" inputmode="numeric"><input maxlength="1" inputmode="numeric"><input maxlength="1" inputmode="numeric"><input maxlength="1" inputmode="numeric"><input maxlength="1" inputmode="numeric"><input maxlength="1" inputmode="numeric"></div>
     <div class="err" id="oerr"></div>
     <button class="p" id="otpGo" data-i="verify" style="width:100%;padding:13px"></button>
     <p><button class="lnk" id="resend"></button> · <button class="lnk" id="backBtn" data-i="back"></button></p>
@@ -232,36 +234,32 @@ html.intro .logo:not(.ilogo){visibility:hidden}
 <div id="toast"></div>
 
 <script>
-/* on-screen error report (for phones): shows any JS error in a red bar */
-window.addEventListener('error',function(e){try{var d=document.getElementById('dbgErr');if(!d){d=document.createElement('div');d.id='dbgErr';d.style.cssText='position:fixed;left:0;right:0;bottom:0;z-index:99999;background:#b00020;color:#fff;font:12px/1.5 monospace;padding:8px 10px;direction:ltr;text-align:left;white-space:pre-wrap;max-height:40vh;overflow:auto';document.body.appendChild(d);}d.textContent+=(e.message||'error')+' @ line '+(e.lineno||'?')+':'+(e.colno||'?')+'\n';}catch(x){}});
-</script>
-<script>
 const USERS_API = 'https://script.google.com/macros/s/AKfycbz3mX2f1bfor8h6P0D9AowAHDdg-4Y7NOPdQF3amb6G-fGP9AMC2SRkCoX8HhIrbHSa/exec';     // Code 1: login / sign-up sheet
 const PRODUCTS_API = 'https://script.google.com/macros/s/AKfycbwshK7Hm7MRAdiupl3xkrnKzK5u72ezuAQpxmiGBCrvo4omuC1gYJheF-BdAv4qEPcOPg/exec';  // Code 2: products sheet
 
 const T = {
 ar:{brand:'DAW by Dalilin',tag:'اعرض منتجات محلك بسهولة',tagsub:'سجّل حسابك وأضف منتجاتك في دقائق.',f1:'🔐 دخول آمن برمز تحقق',f2:'📦 أضف عدداً غير محدود من المنتجات',f3:'🌐 عربي / إنجليزي',
  signin:'تسجيل الدخول',signup:'إنشاء حساب',name:'الاسم',phone:'رقم الهاتف',cr:'رقم السجل التجاري',company:'اسم الشركة / المحل',email:'البريد الإلكتروني',pass:'كلمة المرور',
- otpt:'أدخل رمز التحقق',otpmsg:'أرسلنا رمزاً من 4 أرقام إلى بريدك الإلكتروني',verify:'تأكيد',back:'رجوع',resend:'إعادة إرسال الرمز',resendIn:'إعادة الإرسال بعد',
+ otpt:'أدخل رمز التحقق',otpmsg:'أرسلنا رمزاً من 6 أرقام إلى بريدك الإلكتروني',verify:'تأكيد',back:'رجوع',resend:'إعادة إرسال الرمز',resendIn:'إعادة الإرسال بعد',
  welcome:'مرحباً',shopsub:'اضغط لإضافة منتجاتك وإكمالها',homemsg:'ابدأ بإضافة منتجات محلك',addprods:'إضافة المنتجات ←',addmore:'+ إضافة منتج آخر',
  save:'حفظ',a0:'غير محفوظ بعد…',a1:'جارٍ الحفظ…',a2:'تم الحفظ تلقائياً ✓',a3:'تعذر الحفظ التلقائي',homeb:'الرئيسية',logout:'خروج',lgt:'تسجيل الخروج',lgm:'سيتم تسجيل خروجك من حسابك. تأكد من حفظ منتجاتك قبل الخروج.',lgy:'نعم، تسجيل الخروج',lgn:'إلغاء',data:'البيانات',cont:'إكمال إضافة المنتجات',send:'إرسال',close:'إغلاق',saved:'تم الحفظ بنجاح ✅',sentp:'تم إرسال منتجاتك بنجاح ✅',soon:'سيتم تفعيل الإرسال لاحقاً',sent:'تم إرسال رمز جديد',
  product:'منتج',remove:'حذف',nameAr:'اسم المنتج (عربي) *',nameEn:'اسم المنتج (إنجليزي) *',descAr:'الوصف (عربي) *',descEn:'الوصف (إنجليزي) *',price:'السعر *',type:'نوع المنتج *',
  category:'التصنيف',days:'أيام التحضير',hours:'ساعات التحضير',mins:'دقائق التحضير',qty:'الكمية',maxQty:'أقصى كمية للطلب',attrs:'الخصائص',size:'الحجم',offer:'عليه عرض',stock:'متوفر',
  images:'الصور (حتى صورتين)',addimg:'+ صورة',needf:'يرجى تعبئة الحقول الأساسية (*) لكل منتج',products:'منتج',
- missing:'أكمل جميع الحقول',weakpass:'كلمة المرور 6 أحرف على الأقل',exists:'الحساب موجود مسبقاً',badlogin:'البريد أو كلمة المرور غير صحيحة',badotp:'الرمز غير صحيح',toomany:'محاولات كثيرة، أعد المحاولة لاحقاً',session:'انتهت الجلسة، سجل الدخول مجدداً',net:'تعذر الاتصال بالخادم'},
+ missing:'أكمل جميع الحقول',weakpass:'كلمة المرور 8 أحرف على الأقل',exists:'الحساب موجود مسبقاً',badlogin:'البريد أو كلمة المرور غير صحيحة',badotp:'الرمز غير صحيح',toomany:'محاولات كثيرة، أعد المحاولة لاحقاً',session:'انتهت الجلسة، سجل الدخول مجدداً',net:'تعذر الاتصال بالخادم',server:'خطأ في الخادم، حاول لاحقاً',bad:'طلب غير صالح',pickacc:'اختر الحساب:'},
 en:{brand:'DAW by Dalilin',tag:'Showcase your shop products with ease',tagsub:'Create your account and add products in minutes.',f1:'🔐 Secure sign-in with a verification code',f2:'📦 Add unlimited products',f3:'🌐 Arabic / English',
  signin:'Sign in',signup:'Sign up',name:'Full name',phone:'Phone number',cr:'Commercial registration no.',company:'Company / shop name',email:'Email',pass:'Password',
- otpt:'Enter verification code',otpmsg:'We sent a 4-digit code to your email',verify:'Verify',back:'Back',resend:'Resend code',resendIn:'Resend in',
+ otpt:'Enter verification code',otpmsg:'We sent a 6-digit code to your email',verify:'Verify',back:'Back',resend:'Resend code',resendIn:'Resend in',
  welcome:'Welcome',shopsub:'Tap to add and complete your products',homemsg:'Start by adding your shop products',addprods:'Add products →',addmore:'+ Add another product',
  save:'Save',a0:'Not saved yet…',a1:'Saving…',a2:'Auto-saved ✓',a3:'Auto-save failed',homeb:'Home',logout:'Log out',lgt:'Log out',lgm:'You are about to log out of your account. Make sure your products are saved first.',lgy:'Yes, log out',lgn:'Cancel',data:'Data',cont:'Continue adding products',send:'Send',close:'Close',saved:'Saved successfully ✅',sentp:'Your products were sent successfully ✅',soon:'Sending will be enabled later',sent:'A new code was sent',
  product:'Product',remove:'Remove',nameAr:'Product name (Arabic) *',nameEn:'Product name (English) *',descAr:'Description (Arabic) *',descEn:'Description (English) *',price:'Price *',type:'Product type *',
  category:'Category',days:'Preparing days',hours:'Preparing hours',mins:'Preparing minutes',qty:'Quantity',maxQty:'Max order quantity',attrs:'Attributes',size:'Size',offer:'Has offer',stock:'In stock',
  images:'Images (max 2)',addimg:'+ Image',needf:'Please fill the required (*) fields of every product',products:'products',
- missing:'Please fill all fields',weakpass:'Password must be at least 6 characters',exists:'Account already exists',badlogin:'Wrong email or password',badotp:'Wrong code',toomany:'Too many attempts, try later',session:'Session expired, sign in again',net:'Cannot reach the server'}};
-let lang = (()=>{ try { return localStorage.lang; } catch(e){ return ''; } })() || 'ar', mode = 'in', last = null, token = '', user = {}, P = [], timer = 0;
+ missing:'Please fill all fields',weakpass:'Password must be at least 8 characters',exists:'Account already exists',badlogin:'Wrong email or password',badotp:'Wrong code',toomany:'Too many attempts, try later',session:'Session expired, sign in again',net:'Cannot reach the server',server:'Server error, try later',bad:'Invalid request',pickacc:'Choose the account:'}};
+let lang = (()=>{ try { return localStorage.lang; } catch(e){ return ''; } })() || 'ar', mode = 'in', last = null, authId = '', pickId = '', token = '', user = {}, P = [], timer = 0;
 const $ = id => document.getElementById(id), t = k => T[lang][k] || k;
 const show = id => { if (id === 'home' && typeof updHome === 'function') updHome(); $('homeBtn').classList.toggle('hide', id !== 'prods'); $('auto').classList.toggle('hide', id !== 'prods'); $('langBtn').classList.toggle('hide', id === 'prods'); $('logoutBtn').classList.toggle('hide', id !== 'home'); ['auth','otp','home','prods'].forEach(s => { const e = $(s); e.classList.toggle('hide', s !== id); if (s === id) { e.style.animation = 'none'; e.offsetHeight; e.style.animation = ''; } }); };
-const toast = m => { $('toast').innerHTML = '<span>' + m + '</span>'; setTimeout(() => $('toast').innerHTML = '', 2800); };
+const toast = m => { const s = document.createElement('span'); s.textContent = m; $('toast').replaceChildren(s); clearTimeout(toast.h); toast.h = setTimeout(() => $('toast').replaceChildren(), 2800); };
 const busy = (b, on) => { b.disabled = on; b.classList.toggle('ld', on); };
 
 function applyLang(){
@@ -280,7 +278,7 @@ function setMode(m){ mode = m; $('tIn').classList.toggle('on', m === 'in'); $('t
 $('tIn').onclick = () => setMode('in'); $('tUp').onclick = () => setMode('up');
 
 async function api(action, data){
-  try { const r = await fetch(['save','list','delete'].includes(action) ? PRODUCTS_API : USERS_API, { method:'POST', body: JSON.stringify({ action, token, ...data }), signal: AbortSignal.timeout(action === 'save' ? 120000 : 60000) }); return await r.json(); }
+  try { const r = await fetch(['save','list','delete'].includes(action) ? PRODUCTS_API : USERS_API, { method:'POST', credentials:'omit', referrerPolicy:'no-referrer', body: JSON.stringify({ action, token, ...data }), signal: AbortSignal.timeout(action === 'save' ? 120000 : 60000) }); return await r.json(); }
   catch(e) { return { ok:false, error:'net' }; }
 }
 
@@ -289,39 +287,45 @@ async function sendAuth(){ return api(last.action, last.d); }
 $('authGo').onclick = async () => {
   const d = { email:$('email').value, password:$('pass').value };
   if (mode === 'up') Object.assign(d, { name:$('name').value, phone:$('phone').value, cr:$('cr').value, company:$('company').value });
+  if (mode === 'in' && pickId) d.id = pickId; pickId = '';
   last = { action: mode === 'in' ? 'login' : 'signup', d }; busy($('authGo'), true); $('aerr').textContent = '';
   const r = await sendAuth(); busy($('authGo'), false);
   if (!r.ok) { $('aerr').textContent = t(r.error); return; }
-  openOtp();
+  if (r.choose) { chooseAcc(r.choose); return; }
+  authId = r.id || ''; openOtp();
 };
+function chooseAcc(list){ const box = $('aerr'); box.replaceChildren(); const h = document.createElement('div'); h.textContent = t('pickacc'); box.appendChild(h);
+  (Array.isArray(list) ? list : []).forEach(a => { const b = document.createElement('button'); b.type = 'button'; b.className = 'lnk'; b.style.display = 'block';
+    b.textContent = String(a.company || '') + ' — ' + String(a.name || ''); b.onclick = () => { pickId = String(a.id || ''); $('authGo').click(); }; box.appendChild(b); }); }
 const obs = () => [...document.querySelectorAll('.ob input')];
 function openOtp(){ obs().forEach(i => i.value = ''); $('oerr').textContent = ''; show('otp'); obs()[0].focus(); cool(45); }
 function cool(s){ timer = s; clearInterval(cool.h); cool.h = setInterval(() => { timer--; tick(); if (timer <= 0) clearInterval(cool.h); }, 1000); tick(); }
 function tick(){ const b = $('resend'); b.disabled = timer > 0; b.textContent = timer > 0 ? t('resendIn') + ' ' + timer + 's' : t('resend'); }
-$('resend').onclick = async () => { const r = await sendAuth(); if (r.ok) { toast(t('sent')); cool(45); } else toast(t(r.error)); };
+$('resend').onclick = async () => { const r = await sendAuth(); if (r.ok && !r.choose) { if (r.id) authId = r.id; toast(t('sent')); cool(45); } else toast(t(r.error)); };
 $('backBtn').onclick = () => show('auth');
 obs().forEach((el, i, a) => {
   el.oninput = () => { el.value = el.value.replace(/\D/g, ''); if (el.value && a[i+1]) a[i+1].focus(); if (a.every(x => x.value)) $('otpGo').click(); };
   el.onkeydown = e => { if (e.key === 'Backspace' && !el.value && a[i-1]) a[i-1].focus(); };
-  el.onpaste = e => { const v = (e.clipboardData.getData('text').match(/\d/g) || []).slice(0, 4); if (v.length) { e.preventDefault(); v.forEach((c, k) => a[k].value = c); a[Math.min(v.length, 3)].focus(); if (v.length === 4) $('otpGo').click(); } };
+  el.onpaste = e => { const v = (e.clipboardData.getData('text').match(/\d/g) || []).slice(0, a.length); if (v.length) { e.preventDefault(); v.forEach((c, k) => a[k].value = c); a[Math.min(v.length, a.length - 1)].focus(); if (v.length === a.length) $('otpGo').click(); } };
 });
 $('otpGo').onclick = async () => {
-  const code = obs().map(i => i.value).join(''); if (code.length < 4) return;
-  busy($('otpGo'), true); const r = await api('verify', { email:last.d.email, code }); busy($('otpGo'), false);
+  const code = obs().map(i => i.value).join(''); if (code.length < obs().length) return;
+  busy($('otpGo'), true); const r = await api('verify', { id:authId, code }); busy($('otpGo'), false);
   if (!r.ok) { $('oerr').textContent = t(r.error); obs().forEach(i => i.value = ''); obs()[0].focus(); return; }
-  token = r.token; user = { name:r.name, company:r.company, email:last.d.email.trim().toLowerCase() }; try { localStorage.daw_session = JSON.stringify({ token, user }); } catch(e){} enterHome();
+  token = r.token; user = { name:r.name, company:r.company, email:last.d.email.trim().toLowerCase() }; try { localStorage.daw_session = JSON.stringify({ token, user }); } catch(e){} last = null; enterHome();
 };
 let hasProd = false, homeChecked = false;
 const hc = p => p && (p.nameAr || p.nameEn || p.descAr || p.descEn || p.type || String(p.price == null ? '' : p.price) !== '');
 function updHome(){ // "Add products" button disappears once any product was added
-  let d = []; try { d = JSON.parse(localStorage['draft_' + user.email] || '[]'); } catch(e){}
+  let d = []; try { d = JSON.parse(localStorage['draft_' + user.email] || '[]'); } catch(e){} if (!Array.isArray(d)) d = [];
   $('openProds').classList.toggle('hide', !homeChecked || hasProd || P.some(hc) || d.some(hc)); }
 function enterHome(){ $('logoutBtn').classList.remove('hide'); $('saveBtn').classList.add('hide'); homeChecked = false; show('home'); applyLang();
   api('list', {}).then(r => { if (r.ok && r.products && r.products.some(hc)) hasProd = true; homeChecked = true; updHome(); }); }
 $('homeBtn').onclick = () => { saveDraft(); $('saveBtn').classList.add('hide'); show('home'); window.scrollTo(0, 0); };
-const doLogout = () => { try { localStorage.removeItem('daw_session'); localStorage.removeItem('s'); sessionStorage.clear(); } catch(e){} location.reload(); };
+const doLogout = clear => { try { localStorage.removeItem('daw_session'); localStorage.removeItem('s'); sessionStorage.clear();
+    if (clear === true) Object.keys(localStorage).filter(k => k.indexOf('draft_') === 0).forEach(k => localStorage.removeItem(k)); } catch(e){} location.reload(); };
 $('logoutBtn').onclick = () => $('lgModal').classList.remove('hide');
-$('lgYes').onclick = doLogout;
+$('lgYes').onclick = () => doLogout(true);
 $('lgNo').onclick = () => $('lgModal').classList.add('hide');
 $('lgModal').onclick = e => { if (e.target.id === 'lgModal') $('lgModal').classList.add('hide'); };
 let aT = 0, aSaving = false, aAgain = false, aState = 2;
@@ -341,15 +345,20 @@ async function autoSave(){
   if (aAgain) { aAgain = false; aT = setTimeout(autoSave, 300); } else if ($('prods').classList.contains('hide') === false) setAuto(2);
 }
 function saveDraft(){ try { localStorage['draft_' + user.email] = JSON.stringify(P); } catch(e){} }
-const imgSrc = u => { const m = /\/d\/([^/]+)/.exec(u); return m ? 'https://drive.google.com/thumbnail?id=' + m[1] + '&sz=w400' : u; };
+const imgSrc = u => { u = String(u);
+  const H = '(?:drive\\.google\\.com|[\\w-]+\\.googleusercontent\\.com)';
+  const m = new RegExp('^https://' + H + '(?:/[^?#]*)?/d/([\\w-]+)').exec(u);
+  if (m) return 'https://drive.google.com/thumbnail?id=' + m[1] + '&sz=w400';
+  if (new RegExp('^https://' + H + '/[\\w./?=&%-]*$').test(u)) return u;
+  return /^data:image\/jpeg;base64,[A-Za-z0-9+\/=]+$/.test(u) ? u : ''; };
 async function openProducts(){
   const b = $('openProds'); busy(b, true);
   if (!P.length) {
     const r = await api('list', {});
     if (!r.ok && r.error === 'session') { toast(t('session')); setTimeout(() => doLogout(), 1200); busy(b, false); return; }
-    const m = new Map(); (r.ok ? r.products : []).forEach(p => m.set(String(p.id), { ...blank(), ...p, open:false }));
-    let d = []; try { d = JSON.parse(localStorage['draft_' + user.email] || '[]'); } catch(e){}
-    d.forEach(p => m.set(String(p.id), { ...blank(), ...p, open:false }));
+    const m = new Map(); (r.ok && Array.isArray(r.products) ? r.products : []).forEach(p => { if (p && typeof p === 'object') m.set(String(p.id), fix(p)); });
+    let d = []; try { d = JSON.parse(localStorage['draft_' + user.email] || '[]'); } catch(e){} if (!Array.isArray(d)) d = [];
+    d.forEach(p => { if (p && typeof p === 'object') m.set(String(p.id), fix(p)); });
     P = [...m.values()]; if (!P.length) P.push(blank()); P[P.length - 1].open = true;
   }
   busy(b, false); setAuto(2); $('saveBtn').classList.remove('hide'); show('prods'); render();
@@ -358,8 +367,9 @@ $('openProds').onclick = openProducts; $('shopBar').onclick = openProducts;
 
 // ---- products ----
 const REQ = ['nameAr','nameEn','descAr','descEn','price','type'];
-const blank = () => ({ id:'p' + Date.now() + Math.floor(Math.random()*999), nameAr:'', nameEn:'', descAr:'', descEn:'', price:'', type:'', category:'', days:'', hours:'', mins:'', qty:'', maxQty:'', attrs:'', size:'', offer:false, stock:true, images:[], open:true });
-const esc = s => String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+const blank = () => ({ id:'p' + (window.crypto && crypto.randomUUID ? crypto.randomUUID() : Date.now() + '-' + Math.random().toString(36).slice(2)), nameAr:'', nameEn:'', descAr:'', descEn:'', price:'', type:'', category:'', days:'', hours:'', mins:'', qty:'', maxQty:'', attrs:'', size:'', offer:false, stock:true, images:[], open:true });
+const fix = p => { const o = { ...blank(), ...p, open:false }; o.images = (Array.isArray(o.images) ? o.images : []).filter(u => typeof u === 'string' && imgSrc(u)).slice(0, 2); return o; };
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const pct = p => Math.round(REQ.filter(k => String(p[k]).trim() !== '').length / REQ.length * 100);
 function f(i, k, type, ta){ const v = esc(P[i][k]);
   return `<div><label>${t(k)}</label>` + (ta ? `<textarea rows="3" data-i2="${i}" data-k="${k}">${v}</textarea>` : `<input type="${type||'text'}" value="${v}" data-i2="${i}" data-k="${k}">`) + '</div>'; }
@@ -372,7 +382,7 @@ function render(){
     <div class="pb"><div class="g">${f(i,'nameAr')}${f(i,'nameEn')}${f(i,'descAr',0,1)}${f(i,'descEn',0,1)}${f(i,'price','number')}${f(i,'type')}</div>
     <div class="g3">${f(i,'category')}${f(i,'size')}${f(i,'attrs')}${f(i,'days','number')}${f(i,'hours','number')}${f(i,'mins','number')}${f(i,'qty','number')}${f(i,'maxQty','number')}</div>
     <div class="sw">${sw(i,'offer')}${sw(i,'stock')}</div>
-    <label>${t('images')}</label><div class="imgs">${p.images.map((s, j) => `<div class="im"><img src="${imgSrc(s)}"><i data-ri="${i}" data-rj="${j}">×</i></div>`).join('')}
+    <label>${t('images')}</label><div class="imgs">${p.images.map((s, j) => `<div class="im"><img src="${esc(imgSrc(s))}" alt=""><i data-ri="${i}" data-rj="${j}">×</i></div>`).join('')}
     ${p.images.length < 2 ? `<div class="dz" data-up="${i}">📷<br>${t('addimg')}</div>` : ''}</div></div></div>`).join('');
   saveDraft(); const n = P.length; $('cnt').textContent = n; $('cnt').classList.toggle('hide', !n);
 }
